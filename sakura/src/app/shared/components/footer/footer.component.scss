@@ -4,6 +4,8 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    font-family: 'Raleway';
+    color: white;
 
     >img {
         height: 44px;
@@ -20,7 +22,14 @@ section {
         cursor: pointer;
     }
 
-    &>div img:hover {
-        scale: 1.05;
+    >div>a {
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
     }
+
+    // &>div img:hover {
+    //     scale: 1.05;
+    // }
 }
+
