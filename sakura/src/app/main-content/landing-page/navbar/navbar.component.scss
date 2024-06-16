@@ -1,0 +1,51 @@
+nav {
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Raleway';
+    font-size: 24px;
+    margin-bottom: 128px;
+    height: 112px;
+
+    >img {
+        width: 64px;
+        height: 64px;
+    }
+
+    >div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 48px;
+
+        >a {
+            &:hover{
+                color: #9F0908;
+            }
+        }
+    }
+
+    >div>div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.phone_btn {
+    padding: 8px;
+    background-color: #9F0908;
+    border: 2px solid white;
+    border-radius: 12px;
+
+    >img {
+        width: 32px;
+        height: 32px;
+    }
+}
