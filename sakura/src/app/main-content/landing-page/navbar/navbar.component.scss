@@ -1,3 +1,12 @@
+@mixin borderStyling($bStyle) {
+    border: 2px $bStyle white;
+    border-radius: 12px;
+}
+
+@mixin fontColor($cFont) {
+    color: $cFont;
+}
+
 nav {
     padding: 32px 64px 32px 64px;
     display: flex;
@@ -21,7 +30,7 @@ nav {
 
         >a {
             &:hover{
-                color: #9F0908;
+                @include fontColor(#9F0908);
             }
         }
     }
@@ -35,14 +44,14 @@ nav {
 
 a {
     text-decoration: none;
-    color: white;
+    @include fontColor(white);
 }
 
 .phone_btn {
     padding: 8px;
     background-color: #9F0908;
-    border: 2px solid white;
-    border-radius: 12px;
+    @include borderStyling(solid);
+    cursor: pointer;
 
     >img {
         width: 32px;
