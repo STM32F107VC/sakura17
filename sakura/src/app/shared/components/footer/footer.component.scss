@@ -1,13 +1,14 @@
 section {
     height: 144px;
+    padding: 32px 64px 32px 64px;
     background-color: #0A141E;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     font-family: 'Raleway';
     color: white;
 
-    >img {
+    >a>img {
         height: 44px;
     }
 
@@ -28,8 +29,9 @@ section {
         cursor: pointer;
     }
 
-    // &>div img:hover {
-    //     scale: 1.05;
-    // }
+    >div>a {
+        &:hover {
+            color: #9F0908;
+        }
+    }
 }
-
